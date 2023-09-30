@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="gUX-0P-htz">
             <objects>
-                <viewController id="58Q-ps-K9P" customClass="ViewController" customModule="Quizzler_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="58Q-ps-K9P" customClass="ViewController" customModule="Quizzler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uyP-tk-xHr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,8 +24,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XjF-j7-k8f">
                                 <rect key="frame" x="16" y="59" width="361" height="759"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ly-fN-H6t">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="76.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3I-xn-FyJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="559"/>
+                                        <rect key="frame" x="0.0" y="86.666666666666657" width="361" height="472.33333333333337"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -87,6 +93,7 @@
                         <outlet property="falseButton" destination="eBh-ng-GuL" id="nud-29-RZK"/>
                         <outlet property="progressBar" destination="hUd-3D-M4z" id="8Et-F2-VaH"/>
                         <outlet property="questionLabel" destination="S3I-xn-FyJ" id="nW8-HJ-RNR"/>
+                        <outlet property="scoreLabel" destination="3Ly-fN-H6t" id="IxM-DJ-iSi"/>
                         <outlet property="trueButton" destination="IMG-4F-Ou6" id="R6t-fC-An3"/>
                     </connections>
                 </viewController>
